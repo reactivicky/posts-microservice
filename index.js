@@ -40,6 +40,10 @@ app.post("/posts", async (req, res) => {
   });
 });
 
+app.post("/events", async (req, res) => {
+  console.log("event received", req.body);
+});
+
 app.listen(4000, () => {
   console.log("Listening on port 4000...");
 });
